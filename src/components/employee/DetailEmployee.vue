@@ -16,19 +16,21 @@
 </template>
 <script>
 export default {
-    props: ['employee'],
-    data() {
-        return {
-            
-        }
+  props: ["employee"],
+  data() {
+    return {};
+  },
+  methods: {
+    onDeleted(id) {
+      this.$emit("delete", id);
     },
-    methods: {
-        onDeleted(id) {
-            this.$emit("delete", id);
-        }
-    }
-}
+  },
+};
 </script>
-<style lang="">
-    
+<style scoped>
+.card-img-top {
+  width: auto;
+  height: auto;
+  border-radius: 4px;
+}
 </style>
