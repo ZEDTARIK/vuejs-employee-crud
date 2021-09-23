@@ -17,6 +17,12 @@
                 </div>
 
                 <div class="form-group">
+                    <label for="">Department</label>
+                    <input v-model="dapartement" type="text" class="form-control" placeholder="department">
+                </div>
+
+
+                <div class="form-group">
                     <button @click="addNewEmployee()" class="btn btn-sm btn-block btn-success">Save</button>
                 </div>
             </div>
@@ -27,7 +33,7 @@
     export default {
         data() {
             return {
-
+                dapartement: '',
             }
         },
         methods: {
@@ -41,7 +47,8 @@
 
                 const employee = {
                     title,
-                    image
+                    image,
+                    dapartement: this.dapartement,
                 }
 
                 this.$emit("add", employee);

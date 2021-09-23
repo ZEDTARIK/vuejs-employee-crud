@@ -36,10 +36,9 @@ export default {
             showForm: false,
             title: "List Employees",
             Employees: [
-                { id: 1, title: "Team work IT", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo6JfE0uf91zIK4f4npXtxmgWxs6X7DRLQMw&usqp=CAU"},
-                { id: 2, title: "Learn Laravel", image: "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/aL2OXWSpTguVo0azLaPb"},
-                { id: 3, title: "Learn JavaScript", image: "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/H9QyEOsSLG05qNb2kC0V"},
-                { id: 4, title: "Learn Spring Boot", image: "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/5miGPBu8RbCSc4hCzN39"},
+                { id: 2, dapartement: "IT", title: "Learn Laravel", image: "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/aL2OXWSpTguVo0azLaPb"},
+                { id: 3, dapartement: "IT", title: "Learn JavaScript", image: "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/H9QyEOsSLG05qNb2kC0V"},
+                { id: 4, dapartement: "IT", title: "Learn Spring Boot", image: "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/5miGPBu8RbCSc4hCzN39"},
             ]
         }
     },

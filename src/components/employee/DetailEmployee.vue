@@ -7,6 +7,10 @@
                     <p class="card-text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias temporibus corrupti exercitationem ullam accusantium! Velit delectus natus neque sequi corporis.
                     </p>
+
+                    
+                    <span class="badge bagde-pill badge-primary"> {{ employee.dapartement }} </span>
+                    
                 </div>
                 <div class="card-footer">
                     <button @click="onDeleted(employee.id)" class="btn btn-sm btn-danger">Delete</button>
