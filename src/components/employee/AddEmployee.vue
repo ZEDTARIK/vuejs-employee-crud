@@ -18,7 +18,12 @@
 
                 <div class="form-group">
                     <label for="">Department</label>
-                    <input v-model="dapartement" type="text" class="form-control" placeholder="department">
+                    
+                    <select v-model="dapartement" class="form-control" >
+                        <option v-for="dep in Depatements" :key="dep.id"
+                            :value="dep.id"> {{ dep.name }} </option>
+                    </select>
+                    
                 </div>
 
 
@@ -34,6 +39,12 @@
         data() {
             return {
                 dapartement: '',
+                Depatements: [
+                    {id: 1, name: "IT"},
+                    {id: 2, name: "RH"},
+                    {id: 3, name: "Comptability"},
+                    {id: 4, name: "Finance"},
+                ],
             }
         },
         methods: {
@@ -48,7 +59,7 @@
                 const employee = {
                     title,
                     image,
-                    dapartement: this.dapartement,
+                    dapartement: this.Depatements.find(dep => dep.id == this.dapartement).name,
                 }
 
                 this.$emit("add", employee);
