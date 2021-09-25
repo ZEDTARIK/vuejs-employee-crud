@@ -1,5 +1,24 @@
 <template lang="">
 
+  <div class="row">
+      <div class="col-md-6 mx-auto">
+        <teleport to='#alertMsg' v-if="alertMsgDeleted">
+        
+            <div class="alert alert-danger">
+                Employee Deleted !!                
+            </div>
+        </teleport >
+
+        <teleport to='#alertMsg' v-if="alertMsgAdd">
+        
+            <div class="alert alert-success">
+                Employee Add SuccessFully !!                
+            </div>
+        </teleport >
+
+      </div>
+  </div>
+
     <div class="row mt-2" v-if="showForm">
         <AddEmployee @add="addEmployee($event)" />        
     </div>
@@ -33,6 +52,8 @@ export default {
     },
     data() {
         return {
+            alertMsgDeleted: false,
+            alertMsgAdd: false,
             showForm: false,
             title: "List Employees",
             Employees: [
@@ -45,10 +66,18 @@ export default {
     methods: {
         deletedEmployee(id) {
             this.Employees = this.Employees.filter(employee => employee.id != id);
+            this.alertMsgDeleted = true;
+            setTimeout(() => {
+                    this.alertMsgDeleted = false;
+            }, 3000);
         },
         addEmployee(employee) {
             this.Employees = [employee, ...this.Employees];
             this.showForm = false;
+            this.alertMsgAdd = true;
+            setTimeout(() => {
+                    this.alertMsgAdd = false;
+            }, 3000);
         },
         displayForm() {
             this.showForm = !this.showForm;
