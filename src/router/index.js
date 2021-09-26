@@ -3,6 +3,7 @@ import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import Blog from '../views/blog'
 import ShowPost from '../views/blog/ShowPost'
+import EditPost from '../views/blog/EditPost'
 import PageNotFound from '../views/PageNotFound'
 
 
@@ -26,6 +27,12 @@ const routes = [
     path: '/blog/:id/:slug',
     name: 'Show-Post',
     component: ShowPost,
+    props: true
+  },
+  {
+    path: '/blog/edit/:id',
+    name: 'Edit-Post',
+    component: EditPost,
     props: true
   },
   {

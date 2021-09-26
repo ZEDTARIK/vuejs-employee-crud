@@ -12,6 +12,9 @@
                            params: { id: post.id , slug: post.slug }}"
                     class="btn bt-sm btn-dark">Detail
                 </router-link>
+
+                <router-link class="btn btn-warning ml-3" :to="{ name: 'Edit-Post', 
+                                    params: { id: post.id} }">Edit</router-link>
             </div>
         </div>
     </div>

@@ -1,16 +1,16 @@
 {
-    "posts": [
-        {
-            "id": 1,
-            "title": "Learn Angular",
-            "slug": "learn-angular",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, deserunt."
-        },
-        {
-            "id": 2,
-            "title": "Learn JavaScript",
-            "slug": "learn-javascript",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, deserunt."
-        }
-    ]
+  "posts": [
+    {
+      "id": 1,
+      "title": "Learn Angular*",
+      "slug": "learn-angular",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, deserunt.*"
+    },
+    {
+      "id": 2,
+      "title": "Learn JavaScript update *",
+      "slug": "learn-javascript",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, deserunt. update*\n\n"
+    }
+  ]
 }
